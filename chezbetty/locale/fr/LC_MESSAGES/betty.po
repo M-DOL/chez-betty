@@ -422,7 +422,7 @@ msgid ""
 "Every user has an account with Chez Betty that keeps track of how much money "
 "they've put in."
 msgstr ""
-"Chaque utilizateur a une compte avec Chez Betty qui suit combien d'argent "
+"Chaque utilisateur a une compte avec Chez Betty qui suit combien d'argent "
 "ils ont versés."
 
 #: chezbetty/templates/about.jinja2:53
@@ -478,7 +478,7 @@ msgid ""
 msgstr ""
 "Chez Betty vend des articles presque au même coût (normallement une marge de "
 "15%). Puisque personne n'aime la petite monnaie et Betty est en libre-"
-"service,chaque utilizateur tient une compte avec Betty. Vous pouvez mettre "
+"service,chaque utilisateur tient une compte avec Betty. Vous pouvez mettre "
 "20$ (ou n'importecombien) chaque fois et utilizer cette somme jusqu'à c'est "
 "finie."
 
@@ -503,6 +503,8 @@ msgstr ""
 "y a un <a href=\"/shame\">Mur de la Honte</a> pour ceux qui doivent Betty "
 "plus que 5$."
 
+#: chezbetty/templates/about.jinja2:77
+
 #: chezbetty/templates/about.jinja2:85
 msgid "How does Betty set prices?"
 msgstr "Comment Betty fixe-elle les prix?"
@@ -526,10 +528,22 @@ msgstr ""
 "\">la page d'articles</a>."
 
 #: chezbetty/templates/about.jinja2:93
-msgid "What does Betty do with her profits?"
-msgstr "Que fait Betty avec ses profits?"
+msgid "What's the Good Standing Discount?"
+"If you keep an account balance with $20 or more, Betty will give you a 5% discount on all purchases!"
+msgstr "Good Standing Discount, c'est quoi?"
+"Si vous gardez un solde de 20$ ou plus, Betty vous donnera une remise de 5% sur tous les achats!"
 
-#: chezbetty/templates/about.jinja2:95
+#: chezbetty/templates/about.jinja2:98
+msgid "What's the Wall of Shame Tax?"
+"For people on the Wall of Shame (anyone with less than $5 in their account), Betty charges a progressive tax on all purchases."
+"The tax begins at 5% and increases an additional 5% for every additional $5 you are in debt ($10-15 debt is 10%, $15-20 is 15%, and so on)."
+"If you are on the Wall of Shame, the Betty terminal will very clearly show the tax being applied as you check out."
+msgstr "La taxe du Mur de la Honte, c'est quoi?"
+"Aux gens sur le Mur de la Honte (tous ceux qui ont moins que 5$ sur leur compte), Betty se fait payer une taxe progressive sur tous achats."
+"La taxe commence à 5% et augmente 5% en plus pour chaque 5$ supplémentaire que vous devez (une dette de 10$-15$ est 10%, de 15$-20$ est 15%, et ainsi de suite)."
+"Si vous êtes on the sur le Mur de la Honte, le terminal de Betty montrera clairement la taxe appliquée comme vous payerez."
+
+#: chezbetty/templates/about.jinja2:112
 msgid ""
 "First, Betty has to pay her debts (e.g. any losses incurred from dishonest "
 "Chez Betty users). After that, Betty's profits roll into the CSEG general "
@@ -538,7 +552,7 @@ msgid ""
 "for CSEG."
 msgstr ""
 "Premièrement, Betty doit payer ses dettes (par ex. aucun pertes subit par "
-"des utilizateurs malhônets). Les profits qui restent sont ajoutés au fond "
+"des utilisateurs malhônets). Les profits qui restent sont ajoutés au fond "
 "général de DIGL. C'est utilizé pour les aménagements de Betty, pour acheter "
 "les besoins generaux (par ex. des raquettes et balles de ping pong) ou pour "
 "organizer des rencontres (par ex. des soirées au bar) pour DIGL."
@@ -558,11 +572,11 @@ msgstr "Le Mur de la Honte"
 
 #: chezbetty/templates/shame.jinja2:13
 msgid "These users owe Chez Betty more than $5."
-msgstr "Ces utilizateurs doivent Chez Betty plus que 5$."
+msgstr "Ces utilisateurs doivent Chez Betty plus que 5$."
 
 #: chezbetty/templates/shame.jinja2:17
 msgid "Users in Debt"
-msgstr "Utilizateurs en Dette"
+msgstr "Utilisateurs en Dette"
 
 #: chezbetty/templates/shame.jinja2:24
 msgid "uniqname"
@@ -589,7 +603,8 @@ msgid "Thank you!"
 msgstr "Merci Beaucoup!"
 
 #: chezbetty/templates/deposit_complete.jinja2:38
-msgid "You successfully deposited %(amount)s into your account"
+msgid "You successfully deposited %(amount)s into your 
+"
 msgstr "Vous avez déposé %(amount)s à votre compte"
 
 #: chezbetty/templates/deposit_complete.jinja2:41
